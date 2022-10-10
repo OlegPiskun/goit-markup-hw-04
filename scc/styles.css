@@ -111,6 +111,14 @@ body {
   color: var(--accent-color);
 }
 
+.contacts-icon {
+  fill: #757575;
+}
+
+.contacts-icon:hover {
+  fill: var(--accent-color);
+}
+
 .contacts .link {
   font-weight: var(--second-font-weight);
   line-height: 1.14;
@@ -299,13 +307,27 @@ body {
 }
 
 .benefits-title {
-  margin-top: 0;
+  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: var(--primary-font-weight);
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.box-benefits {
+  width: 270px;
+  height: 120px;
+  left: 215px;
+  top: 774px;
+
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.benefits-icon {
+  margin: 25px 100px;
 }
 
 .benefits-text {
@@ -362,7 +384,6 @@ body {
 
 .box-name {
   padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 .team-name {
@@ -388,6 +409,56 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
+}
+
+.link-icon {
+  display: flex;
+  gap: 10px;
+  padding: 16px 32px 30px 32px;
+}
+
+.link-color {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.link-color:hover {
+  background-color: var(--accent-color);
+}
+
+.social-icon {
+  fill: #afb1b8;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  color: #ffffff;
+}
+
+/* <!--Постійні клієнти--> */
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-set {
+  display: flex;
+}
+
+.clients-set .item {
+  width: 170px;
+  height: 92px;
+  gap: 30px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-icon {
+  fill: #afb1b8;
 }
 
 /* Підвал сторінки */
@@ -443,4 +514,44 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+/* Приєднуйтесь */
+
+.title-social-footer {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: var(--primary-font-weight);
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+}
+
+.box-social-footer {
+  display: flex;
+}
+
+.link-social-footer {
+  background: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.link-social-footer:hover {
+  background-color: var(--accent-color);
+}
+
+.social-icon-footer {
+  /* padding: 16px 32px 30px 32px; */
+  fill: #ffffff;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  color: #ffffff;
 }
