@@ -112,11 +112,8 @@ body {
 }
 
 .contacts-icon {
+  margin-right: 10px;
   fill: #757575;
-}
-
-.contacts-icon:hover {
-  fill: var(--accent-color);
 }
 
 .contacts .link {
@@ -129,6 +126,10 @@ body {
 .list .link:hover,
 .list .link:focus {
   color: var(--accent-color);
+}
+
+.contacts-icon:hover {
+  fill: currentColor;
 }
 
 /* Герой */
@@ -144,8 +145,12 @@ body {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4));
-  background-image: url("../images/index/working.jpg");
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/index/working.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -183,6 +188,7 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
 
@@ -264,6 +270,11 @@ body {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.projects .item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects .item:nth-child(3n) {
@@ -555,13 +566,15 @@ body {
 
 .social-footer {
   display: inline-block;
-  margin-top: 0;
 }
 
 .title-social-footer {
   margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   margin-bottom: 20px;
-  /* padding-bottom: 20px; */
+  /* padding-bottom: 72px; */
   font-style: normal;
   font-weight: var(--primary-font-weight);
   line-height: 1.14;
