@@ -343,6 +343,9 @@ body {
 }
 
 .box-benefits {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 270px;
   height: 120px;
   left: 215px;
@@ -350,10 +353,6 @@ body {
 
   background: #f5f4fa;
   border-radius: 4px;
-}
-
-.benefits-icon {
-  margin: 25px 100px;
 }
 
 .benefits-text {
@@ -439,32 +438,34 @@ body {
 
 .link-icon {
   display: flex;
-  padding: 16px 32px 30px 32px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 30px;
   gap: 10px;
 }
 
 .link-icon .link-color {
-  padding-top: 0;
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  padding: 12px;
 }
 
-.link-color:hover {
+.link-color:hover,
+.link-color:focus,
+.link-color:active {
   background-color: var(--accent-color);
 }
 
 .social-icon {
-  margin: 12px;
   align-items: center;
   width: 20px;
   height: 20px;
   fill: #afb1b8;
 }
 
-.social-icon:hover,
-.social-icon:focus,
-.social-icon:active {
+.social-icon:hover {
   fill: #ffffff;
 }
 
@@ -488,24 +489,21 @@ body {
   border-radius: 4px;
 }
 
+.clients-link:hover .clients-icon,
+.clients-icon:focus .clients-link {
+  fill: var(--accent-color);
+}
+
 .clients-link:hover,
 .clients-link:focus {
   border: 1px solid var(--accent-color);
 }
 
 .clients-icon {
-  margin-top: 16px;
-  margin-bottom: 16px;
   width: 106px;
   height: 60px;
   margin: 16px 32px;
   fill: #afb1b8;
-}
-
-.clients-icon:hover,
-.clients-icon:focus,
-.clients-icon:active {
-  fill: var(--accent-color);
 }
 
 /* Підвал сторінки */
@@ -514,6 +512,10 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+}
+
+.address-social-footer {
+  display: flex;
 }
 
 .footer {
@@ -566,13 +568,12 @@ body {
 /* Приєднуйтесь */
 
 .social-footer {
-  display: inline-block;
+  margin-left: 70px;
 }
 
 .title-social-footer {
-  margin: 0;
+  margin-top: 10px;
   margin-bottom: 20px;
-  /* padding-bottom: 72px; */
   font-style: normal;
   font-weight: var(--primary-font-weight);
   line-height: 1.14;
@@ -597,7 +598,8 @@ body {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.link-social-footer:hover {
+.link-social-footer:hover,
+.link-social-footer:focus {
   background-color: var(--accent-color);
 }
 
@@ -606,10 +608,4 @@ body {
   width: 20px;
   height: 20px;
   fill: #ffffff;
-}
-
-.social-icon:hover,
-.social-icon:focus,
-.social-icon:active {
-  color: #ffffff;
 }
